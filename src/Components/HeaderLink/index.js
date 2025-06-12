@@ -1,16 +1,16 @@
 import styles from './headerlink.module.css';
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function HeaderLink({ to, children }) {
 
-    const localizacao = useLocation();
-
     return (
-        <Link className={`
+        <NavLink className={({ isActive }) =>`
             ${styles.link}
-            ${localizacao.pathname === to ? styles.linkDestaque : ""}
-        `} to={to}>
+            ${isActive ? styles.linkDestaque : ""}
+        `} to={to}
+            end
+        >
             {children}
-        </Link>
+        </NavLink>
     )
 }
