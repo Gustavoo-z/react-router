@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Inicio from "./pages/Inicio";
 import SobreMim from "./pages/SobreMim";
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
           <Route path="*" element={<h1>404 - Página não encontrada</h1>} />
         </Routes>
       </BrowserRouter>
+
+      <Footer />
     </>
   );
 }

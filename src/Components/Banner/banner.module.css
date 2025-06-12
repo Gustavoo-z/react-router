@@ -22,9 +22,8 @@
 
 .imagens {
   position: relative;
-  height: 406px;
+  height: 526px;
   overflow: hidden;
-  height: auto;
 }
 
 .imagens > .minhaFoto {

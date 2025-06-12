@@ -1,10 +1,21 @@
 import Banner from "Components/Banner";
+import styles from "./inicio.module.css";
+import Card from "Components/Card";
+
+import posts from "json/posts.json";
+console.log(posts)
 
 export default function Inicio() {
     return (
         <>
             <Banner />
-            <h1>Inicio</h1>
+            <ul className={styles.posts}>
+                {posts.map((post) => (
+                    <li key={post.id}>
+                        <Card posts={post} />
+                    </li>
+                ))}
+            </ul>
         </>
     )
 }
