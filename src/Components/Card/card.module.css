@@ -7,6 +7,8 @@
   transition: transform 0.2s;
   margin-top: -2.5rem;
   margin-bottom: 2.5rem;
+  height: 337px;
+  position: relative;
 }
 
 .post:hover {
@@ -36,6 +38,12 @@
   border: 3px solid var(--azul-medio);
   cursor: pointer;
   transition: 0.2s;
+  position: absolute;
+  bottom: 1em;
+  width: 81px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .botaoLer:hover {

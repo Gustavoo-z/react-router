@@ -1,4 +1,3 @@
-import Banner from "Components/Banner";
 import styles from "./inicio.module.css";
 import Card from "Components/Card";
 
@@ -7,15 +6,12 @@ console.log(posts)
 
 export default function Inicio() {
     return (
-        <>
-            <Banner />
-            <ul className={styles.posts}>
-                {posts.map((post) => (
-                    <li key={post.id}>
-                        <Card posts={post} />
-                    </li>
-                ))}
-            </ul>
-        </>
+        <ul className={styles.posts}>
+            {posts.map((post) => (
+                <li key={post.id}>
+                    <Card posts={post} />
+                </li>
+            ))}
+        </ul>
     )
 }
