@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import DefaultPage from "Components/DefaultPage";
 import Post from "pages/Post";
+import NotFound from "pages/NotFound";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
             <Route path="sobremim" element={<SobreMim/>} />
             <Route path="posts/:id" element={<Post/>} />
           </Route>
-          <Route path="*" element={<h1>404 - Página não encontrada</h1>} />
+          <Route path="*" element={<NotFound/>} />
         </Routes>
       </BrowserRouter>
 
