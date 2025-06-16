@@ -7,7 +7,7 @@ export default function Banner() {
         <div className={styles.banner}>
             <div>
                 <h1 className={styles.titulo}>Ola, Mundo!</h1>
-                <p className={styles.paragrafo}>Bem vindo ao meu blog pessoal.</p>
+                <p className={styles.paragrafo}>Bem vindo ao meu blog pessoal desenvolvido com React para um curso da plataforma Alura.</p>
             </div>
             <div className={styles.imagens}>
                 <img className={styles.circuloColorido} src={circuloColorido} alt="Circulo colorido" aria-hidden={true} />

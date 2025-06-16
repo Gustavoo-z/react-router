@@ -1,8 +1,8 @@
 import styles from "./postmodel.module.css";
 
-export default function PostModel({children, fotoCapa, titulo }) {
+export default function PostModel({children, fotoCapa, titulo, articleRef }) {
     return (
-        <article className={styles.postModeloContainer}>
+        <article ref={articleRef} className={styles.postModeloContainer}>
             <div style={{ backgroundImage: `url(${fotoCapa})` }} className={styles.fotoCapa} />
             
             <h2 className={styles.titulo}>{titulo}</h2>
