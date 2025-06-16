@@ -2,7 +2,6 @@ import styles from "./inicio.module.css";
 import Card from "Components/Card";
 
 import posts from "json/posts.json";
-console.log(posts)
 
 export default function Inicio() {
     return (

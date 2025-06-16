@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./card.module.css";
+import Button from "Components/Button";
 
 export default function Card({ posts }) {
     return (
@@ -7,7 +8,7 @@ export default function Card({ posts }) {
             <div className={styles.post}>
                 <img className={styles.capa} src={`/assets/posts/${posts.id}/capa.png`} alt="Capa do post" />
                 <h2 className={styles.titulo}>{posts.titulo}</h2>
-                <button className={styles.botaoLer} to={`/post/${posts.id}`}>Ler</button>
+                <Button tamanho={"tli"} to={`/posts/${posts.id}`}>Ler</Button>
             </div>
         </Link>
     )
